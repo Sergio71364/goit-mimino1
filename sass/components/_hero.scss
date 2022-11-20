@@ -1,0 +1,54 @@
+.hero-canvas {
+  display: flex;
+
+  max-width: 1600px;
+  height: 720px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, var(--color-gradient1), var(--color-gradient1)),
+    url('../images/hotel-hero-desktop@1x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+  padding-top: 164px;
+  &__details {
+    display: flex;
+  }
+  &--logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    color: var(--color-primary-white);
+  }
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-primary-white);
+    margin-bottom: 242px;
+  }
+  &__address-wrap {
+    /* справа вирівняно якось не так */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    display: flex;
+    padding: 8px 8px 8px 10px;
+    margin-right: auto;
+    border: 1px solid var(--color-accent-yellow-transparent);
+    border-radius: 2px;
+    color: var(--color-gray-primary);
+  }
+  &__address-details {
+    max-width: 233px;
+  }
+}
